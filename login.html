@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="description" content="login page">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <meta name="theme-color" content="#b1cff4"/>
+        <meta name="viewport" content="initial-scale=0.6">
+    </head>
+    <body>
+        <center>
+        <div class="container-top">
+            Login Section
+        </div>
+        <div class="container-bottom">
+            <fieldset>
+                <legend> Resetting your password </legend>
+                If you've forgotten any of your details, you can reset them here by using the email you registered with. If you do not receive an email within a minute
+                feel free to try again. Make sure you check your spam folder or try whitelisting our email <i>admin@stormy.solutions</i><br> <br>
+                <form method="post">
+                    <input type="email" class="smallbutton" placeholder="Email" style="width: 40%;" name="resetpassword" required>
+                    <button class="smallbutton"> Submit </button>
+                </form>
+            </fieldset>
+            <br>
+            <?php } ?>
+            <form method="post">
+                <input class="form" type="text" name="username" placeholder="Username" id="username" autocomplete="off" maxlength="30" required>
+                <input class="form" type="password" name="password" placeholder="Password" id="password" autocomplete="off" maxlength="30" required>
+                <input class="form" type="text" name="twofactor" placeholder="2FA" id="twofac" autocomplete="off" maxlength="30" style="margin-bottom: 3px;">
+                <a href="?resetpass" style="float: right;"> Forgot Password? </a> 
+                <input class="form" type="submit" autocomplete="off" name="login" value="Login" style="margin-top: 5px;">
+            </form>
+        </div>
+    </body>
+</html>
